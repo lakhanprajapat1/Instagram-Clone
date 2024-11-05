@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Helvetica,  Arial, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    color: white;
+}
+
+#main{
+    margin-top: 1vh;
+    height: 98%;
+    width: 420px;
+    background-color: #080808;
+    border-radius: 20px;
+    /* border:1px solid white */
+    padding: 1.5vh 1vh;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 1vw;
+}
+input[type="text"], #login{
+    width: 80%;
+    height: 5vh;
+    margin-top: 2vh;
+    margin-left: 8%;
+    border-radius: 10px;
+    padding: 0 1vw;
+    color: #000000;
+}
+.log p{
+    text-align: end;
+    margin-right: 12%;
+    font-size: 3vh;
+    padding: 2vh 0;
+}
+
+#login{
+    background-color: rgba(48, 48, 182, 0.596);
+    color: aliceblue;
+    margin-bottom: 5vh;
+}
+
+.log{
+    height: auto;
+    width: 420px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.log h1{
+    text-align: center;
+    margin-bottom: 10vh;
+    font-family:cursive;
+    font-size: 7vh;
+}
+.log span{
+    margin-left: 7vw;
+}
+.log a{
+    color: rgb(71, 71, 177);
+}
+
+
+
+
+
+
+
+
+@media (max-width:600px) {
+    body{
+        background-color: #000000;
+    }
+    .main{
+        margin:0;
+        height: 100vh;
+        width: 100%;
+        border:none;
+    }
+    .log{
+        margin-left: 5vw;
+    }
+    .log h1{
+        font-family:fantasy;
+
+    }
+}
