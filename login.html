@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .container{
-            height: 100%;
-        }
-        .form{
-            height: 95%;
-            overflow: hidden;
-        }
-    </style>
 </head>
 <body>
     <div id="main">
@@ -25,15 +16,13 @@
                 <div class="logo">
                     <img src="/assets/instalogo.png" alt="">
                 </div>
-                <form id="signupForm">
-                    <input type="text" id="sign-fullname" placeholder="Full name" required>
-                    <input type="text" id="sign-username" placeholder="Create Username" required><br>
-                    <input type="text" id="sign-password" placeholder="Password" min="8" required ><br>
-                    
-                    <button class="signupbtn" type="submit">Sign Up </button>
+                <form action="">
+                    <input type="text" placeholder="Phone No, Username or Email" required><br>
+                    <input type="text" placeholder="Password" required><br>
+                    <button class="loginbtn" type="submit" onclick="home()">Log In</button><br>
                 </form>
                 <p  style="text-align: center;"> Forget password?</p><br>
-                <p  style="text-align: center;">Have an account? <a href="/login.html">Log In</a></p>
+                <p  style="text-align: center;"> Don't have an account? <a href="/index.html">Sign up</a></p> <br><br>
                 <div class="get">
                     <img src="/assets/get.png" alt="">
                 </div>
