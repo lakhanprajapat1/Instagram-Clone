@@ -37,10 +37,11 @@
     justify-content: center;
 }
 .form{
-    height: 90%;
+    height: 95%;
     width: 45%;
     border: .5px solid rgba(255, 255, 255, 0.337);
     border-radius: 20px;
+    overflow: hidden;
 }
 form{
     padding: 10% 0;
@@ -62,9 +63,18 @@ form button{
     height: 5vh;
     border-radius: 10px;
 }
-.form p a{
+.form p span{
     color: #0095F6;
+    cursor: pointer;
 }
 .get img{
     width: 100%;
+}
+#login-page{
+    display: none;
+}
+#loginError {
+    color: rgb(233, 62, 62);
+    display: none;
+    padding: 10px;
 }
