@@ -16,11 +16,9 @@ html, body{
     width: 100%;
     background-color: #000;
 }
-
 #main{
     height: 100%;
-    width: 100vw;
-    background-color: #000;
+    width: 100%;
     position: absolute;
 }
 .aside{
@@ -83,7 +81,7 @@ html, body{
     height: 10vh;
     width: 100%;
     border-top:1px solid #8c8c8c42;
-    box-shadow: 0 0 8px gray;
+    box-shadow: 0 0 5px gray;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -100,31 +98,59 @@ html, body{
     padding-top: 2vh;
 }
 
-.top-aside{
-    height: 10vh;
-    width: 100vw;
-    border-bottom: 1px solid #76767686;
-    box-shadow: 0 0 8px gray;
+.top-aside {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    position: fixed;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #7c7c7c91;
+    box-shadow: 0 0 5px gray;
+    position: sticky;
     top: 0;
-    overflow: hidden;
+    z-index: 1000;
     display: none;
 }
-.top-aside-right ul{
+.top-aside-left{
+    width: 40%;
+    /* background-color: antiquewhite; */
+}
+.top-aside-left img {
+    height: 35px;
+}
+
+.top-aside-right {
     display: flex;
-    align-self: center;
+    gap: 15px;
     list-style: none;
-    gap: 20px;
-    font-size: 4vh;
-    padding-right: 30px;
+    margin: 0;
+    padding: 0;
+    /* background-color: #0095f6; */
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 25%;
 }
-.top-aside-left img{
-    padding: 10px 0;
-    padding-left: 20px;
+
+.top-aside-right li {
+    display: inline-block;
 }
+
+.top-aside-right a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 3vh;
+    transition: color 0.2s;
+}
+
+
+
+
+
+
+
+
+
 @media (max-width:965px) {
     .insta-logo{
         width: 50%;
