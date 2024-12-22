@@ -28,6 +28,9 @@
     align-items: center;
     justify-content: space-around;
 }
+.front-img{
+    width: 50%;
+}
 .logo{
     height: 20%;
     width: 100%;
@@ -77,4 +80,22 @@ form button{
     color: rgb(233, 62, 62);
     display: none;
     padding: 10px;
+}
+@media (max-width:1250px) {
+    .container{
+    flex-direction: column-reverse;
+    }
+    #main{
+        height: auto;
+    }
+    .form{
+        width: 80%;
+        margin: 10vh 0;
+        padding: 5vh 0;
+    }
+}
+@media (max-width:900px) {
+    .form{
+        width: 100%;
+    }
 }
