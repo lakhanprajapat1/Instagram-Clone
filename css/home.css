@@ -11,6 +11,11 @@
     box-sizing: border-box;
     color: #fff;
 }
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+}
 
 #main{
     height: 100%;
@@ -74,14 +79,53 @@
 .aside .links i{
     padding-right: 10px;
 }
+.bottom-aside{
+    height: 10vh;
+    width: 100%;
+    border-top:1px solid #8c8c8c42;
+    box-shadow: 0 0 8px gray;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+.bottom-aside ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.bottom-aside ul li{
+    font-size: 4vh;
+    padding-top: 2vh;
+}
 
+.top-aside{
+    height: 10vh;
+    width: 100vw;
+    border-bottom: 1px solid #76767686;
+    box-shadow: 0 0 8px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    display: none;
+}
+.top-aside-right ul{
+    display: flex;
+    align-self: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 4vh;
+    padding-right: 30px;
+}
+.top-aside-left img{
+    padding: 10px 0;
+    padding-left: 20px;
+}
 @media (max-width:965px) {
-    #insta-img-logo{
-        display: none;
-    }
-    #insta-icon-logo{
-        display: block;
-    }
     .insta-logo{
         width: 50%;
         left: 20%;
@@ -94,5 +138,16 @@
     }
     .links{
         left: 30%;
+    }
+}
+@media (max-width:768px) {
+    .aside{
+        display: none;
+    }
+    .bottom-aside{
+        display: block;
+    }
+    .top-aside{
+        display: block;
     }
 }
