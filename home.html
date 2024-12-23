@@ -31,27 +31,73 @@
             </div>
             <div class="main-container">
                 <section id="home">
-                    <div class="story-container">
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
-                        <div class="story-circle"></div>
+                    <div class="topbar">
+                        <div class="left-topbar">
+                            <img src="/assets/instalogo.png" alt="">
+                        </div>
+                        <div class="right-topbar">
+                            <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+                            <li><a href=""><i class="fa-regular fa-comment"></i></a></li>
+                        </div>
+                    </div>
+                    <div class="storiya">
+                        <div class="story">
+                            <img src="/assets/front.png" alt="">
+                        </div>
+                        <div class="story">
+                            
+                        </div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                        <div class="story"></div>
+                    </div>
+                    <div class="home-feed">
+                        <div class="feed-post">
+                            <h1><i class="fa-solid fa-user" class="crcl"></i> <span>Instagram-User</span></h1>
+                            <div class="post-img">
+                                <img src="/assets/instaicon.png" alt="">
+                            </div>
+                            <ul>
+                                <li><i class="fa-solid fa-heart" id="like"></i></li>
+                                <li><i class="fa-regular fa-comment"></i></li>
+                                <li><i class="fa-solid fa-share-nodes"></i></li>
+                            </ul>
+                        </div>
+                        <div class="feed-post">
+                            <h1><i class="fa-solid fa-user"></i> <span>Instagram-User</span></h1>
+                            <div class="post-img">
+                                <img src="/assets/instaicon.png" alt="">
+                            </div>
+                            <ul>
+                                <li><i class="fa-solid fa-heart" id="like"></i></li>
+                                <li><i class="fa-regular fa-comment"></i></li>
+                                <li><i class="fa-solid fa-share-nodes"></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
+    <script>
+        let like = document.querySelector("#like")
+        var clk=0;
+        like.addEventListener("click",()=>{
+            if(clk==0){
+                like.style.color="red";
+                clk =1;
+            }else{
+                clk=1
+                like.style.color="white";
+                clk=0
+            }
+        })
+    </script>
 </body>
 </html>
