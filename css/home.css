@@ -12,135 +12,67 @@
     color: #fff;
 }
 html, body{
-    height: 100%;
-    width: 100%;
-    background-color: #000;
+    background-color: black;
 }
 #main{
     height: 100%;
     width: 100%;
     position: absolute;
+    background-color: black;
+}
+.home{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .aside{
     height: 100vh;
     width: 18%;
-    border-right: 1px solid #ffffff76;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    border-right: 1px solid #79797955;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding-left: 2%;
-    padding-right: 1%;
-    position: relative;
-    top: 0;
-    left: 0;
+    justify-content: space-evenly;
 }
-.insta-logo {
-    width: 70%;
-    height: 10%;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+.insta-logo{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .insta-logo img{
     width: 100%;
 }
-#insta-icon-logo{
-    display: none;
-}
 .links{
-    position: absolute;
-    bottom: 5%;
-    left: 20%;
-}
-.links ul{
-    height: 75vh;
-    display: inline;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* background-color: azure; */
-}
-.links ul li{
-    list-style: none;
-    font-size: 2.8vh;
-    margin-bottom: 10px;
-    font-weight: 300;
-    padding: 8px 10px 8px 2px;
-    border-radius: 10px;
-}
-.links ul li:hover{
-    background-color: rgba(171, 171, 171, 0.216);
+    height: 80%;
 }
 .links ul li a{
     text-decoration: none;
 }
-.aside .links i{
-    padding-right: 10px;
-}
-.bottom-aside{
-    height: 10vh;
-    width: 100%;
-    border-top:1px solid #8c8c8c42;
-    box-shadow: 0 0 5px gray;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: none;
-}
-.bottom-aside ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-.bottom-aside ul li{
-    font-size: 4vh;
-    padding-top: 2vh;
-}
-
-.top-aside {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    border-bottom: 1px solid #7c7c7c91;
-    box-shadow: 0 0 5px gray;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    display: none;
-}
-.top-aside-left{
-    width: 40%;
-    /* background-color: antiquewhite; */
-}
-.top-aside-left img {
-    height: 35px;
-}
-
-.top-aside-right {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* background-color: #0095f6; */
-    width: 20%;
-    position: absolute;
-    right: 0;
-    top: 25%;
-}
-
-.top-aside-right li {
-    display: inline-block;
-}
-
-.top-aside-right a {
-    text-decoration: none;
-    color: #262626;
+.links ul li{
     font-size: 3vh;
-    transition: color 0.2s;
+    list-style: none;
+    margin-bottom: 2.9vh;
+    margin-left: 3vw;
+    margin-right: 10px;
+    border-radius: 7px;
+    padding: 5px 8px;
+}
+.links ul li:hover{
+    background-color: #79797928;
+}
+.links i{
+    margin-right: 1vw;
 }
 
 
@@ -148,32 +80,41 @@ html, body{
 
 
 
+.main-container{
+    height: auto;
+    width: 82%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 0;
+    left: 18%;
+}
+#home{
+    height: auto;
+}
+
+.story-container{
+    height: 20vh;
+    width: auto;
+    background-color: whitesmoke;
+    padding: 3vh 5vw;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.story-circle{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 50%;
+}
 
 
 
-@media (max-width:965px) {
-    .insta-logo{
-        width: 50%;
-        left: 20%;
-    }
+
+
+
+@media (max-width:1030px) {
     .links ul li span{
         display: none;
-    }
-    .links ul li i{
-        font-size: 4vh;
-    }
-    .links{
-        left: 30%;
-    }
-}
-@media (max-width:768px) {
-    .aside{
-        display: none;
-    }
-    .bottom-aside{
-        display: block;
-    }
-    .top-aside{
-        display: block;
     }
 }
