@@ -168,6 +168,7 @@ html, body{
     height: 100%;
     width: 100%;
     border:1px solid rgba(128, 128, 128, 0.423);
+    background-size: cover;
 }
 .feed-post h1{
     padding: 20px 10px;
