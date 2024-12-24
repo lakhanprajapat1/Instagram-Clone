@@ -187,8 +187,27 @@ html, body{
     font-size: 5vh;
     margin-left: 30px;
 }
-#like{
+.like{
     cursor: pointer;
+}
+.like:active{
+    scale: 1.5;
+}
+.post-img{
+    position: relative;
+}
+.post-img li{
+    list-style: none;
+}
+.post-img i{
+    font-size: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    text-shadow: 2px 2px 20px rgb(158, 158, 158);
+    display: none;
 }
 @media (max-width:1030px) {
     .links ul li span{

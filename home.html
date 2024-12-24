@@ -44,9 +44,7 @@
                         <div class="story">
                             <img src="/images/IMG_0640.JPG" alt="">
                         </div>
-                        <div class="story">
-                            
-                        </div>
+                        <div class="story"></div>
                         <div class="story"></div>
                         <div class="story"></div>
                         <div class="story"></div>
@@ -62,9 +60,10 @@
                             <h1><i class="fa-solid fa-user" class="crcl"></i> <span>Instagram-User</span></h1>
                             <div class="post-img">
                                 <img src="images/IMG_0640.JPG" alt="">
+                                <li><i class="fa-solid fa-heart"></i></li>
                             </div>
                             <ul>
-                                <li><i class="fa-solid fa-heart" id="like"></i></li>
+                                <li><i class="fa-solid fa-heart like" ></i></li>
                                 <li><i class="fa-regular fa-comment"></i></li>
                                 <li><i class="fa-solid fa-share-nodes"></i></li>
                             </ul>
@@ -75,7 +74,7 @@
                                 <img src="/assets/instaicon.png" alt="">
                             </div>
                             <ul>
-                                <li><i class="fa-solid fa-heart" id="like"></i></li>
+                                <li><i class="fa-solid fa-heart like"></i></li>
                                 <li><i class="fa-regular fa-comment"></i></li>
                                 <li><i class="fa-solid fa-share-nodes"></i></li>
                             </ul>
@@ -86,18 +85,22 @@
         </div>
     </div>
     <script>
-        let like = document.querySelector("#like")
-        var clk=0;
-        like.addEventListener("click",()=>{
-            if(clk==0){
-                like.style.color="red";
-                clk =1;
-            }else{
-                clk=1
-                like.style.color="white";
-                clk=0
-            }
-        })
+        const likeButtons = document.querySelectorAll('.like');
+
+        likeButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+            button.style.color = button.style.color === 'red' ? '' : 'red';
+            });
+        });
+
+        const postImg= document.querySelectorAll(".post-img img")
+
+        postImg.forEach((e) => {
+            postImg.addEventListener('click', () => {
+                alert()
+                button.style.color = button.style.color === 'red' ? '' : 'red';
+            });
+        });
     </script>
 </body>
 </html>
